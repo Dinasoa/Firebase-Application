@@ -1,0 +1,149 @@
+.dashboard {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dashboard__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #dcdcdc;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .dashboard__btn {
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .dashboard div {
+    margin-top: 7px;
+  }
+  
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  font-family: 'Exo', sans-serif;
+}
+
+
+.dashboard {
+  width: 100%;
+  position: absolute;
+  top:0vh;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.span {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: #2d14bb;
+  font-size: 124px;
+  letter-spacing: 8px;
+  cursor: pointer;
+}
+
+.span::before {
+  content: "WELCOME";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    transparent 2px,
+    white 2px,
+    white 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  transition: 1s;
+}
+
+.span::after {
+  content: "WELCOME";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    white 2px,
+    white 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  transition: 1s;
+}
+
+.span:hover:before {
+  top: 10px;
+  left: 10px;
+}
+
+.span:hover:after {
+  top: -10px;
+  left: -10px;
+} 
+
+
+@media only screen and (max-width: 700px) {
+  .span{
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: #2d14bb;
+  font-size: 100px;
+  letter-spacing: 8px;
+  cursor: pointer; 
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .span{
+  left: 50%;
+  top: 25%;
+  color: #2d14bb;
+  font-size: 80px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .span{
+  left: 50%;
+  top: 25%;
+  color: #2d14bb;
+  font-size: 50px;
+  }
+}
